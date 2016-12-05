@@ -13,6 +13,6 @@ build
 .DS_Store
 .env
 npm-debug.log
-
+/src/App.js
 /src/reasons.js
 /public/images

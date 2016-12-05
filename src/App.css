@@ -1,24 +1,11 @@
-/*.App {
-  text-align: center;
+html {
+  height: 100%
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}*/
 
 body {
-  font-family: 'Anton', sans-serif;
-  /*opacity: .2;*/
+  margin:0;
+  padding:0;
+  font-family: 'Francois One', sans-serif;
   background-image: url('../public/images/background.jpg');
   width: 100%;
   height: 100%;
@@ -26,12 +13,64 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    font-family: 'Anton', sans-serif;
-    /*opacity: .2;*/
     background-image: url('../public/images/mobile.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
   }
+}
+#container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  position: relative;
+}
+#header {
+  font-size: 3rem;
+  padding: 40px;
+}
+#body {
+  padding-top: 50px;
+  font-size: 2em;
+}
+#footer {
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+/*BUTTON*/
+
+.btn {
+  align-self: flex-end;
+  opacity: .7;
+  background: #0099ff;
+  background-image: -webkit-linear-gradient(top, #0099ff, #4896c7);
+  background-image: -moz-linear-gradient(top, #0099ff, #4896c7);
+  background-image: -ms-linear-gradient(top, #0099ff, #4896c7);
+  background-image: -o-linear-gradient(top, #0099ff, #4896c7);
+  background-image: linear-gradient(to bottom, #0099ff, #4896c7);
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 2px 7px #000000;
+  -moz-box-shadow: 1px 2px 7px #000000;
+  box-shadow: 1px 2px 7px #000000;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #2062a8;
+  text-decoration: none;
 }
